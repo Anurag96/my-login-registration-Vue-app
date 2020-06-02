@@ -15,10 +15,29 @@ npm run serve
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Requirements
+
+
+Required all field
+Username = 
+email = 
+password = 
+confirm password = 
+
+Submit reset/cancel
+
+User = []
+
+
+Additional
+username not duplicate
+email patten / duplicate
+password = confirm password
+
+
+Login 
+Username/email
+password
+
+welcome  
