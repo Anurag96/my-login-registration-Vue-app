@@ -1,19 +1,19 @@
 <template>
   <div id="app">
-    <Header/>
-    <Registration msg=""/>
+  <!-- <router-link to="/registration">About</router-link>
+    <router-view></router-view> -->
+    <Registration/>
   </div>
 </template>
 
 <script>
 import Registration from './components/Registration.vue'
-import Header from './components/Header.vue';
 
 export default {
   name: 'App',
   components: {
-    Registration,
-    Header
+    Registration
+    
   }
 }
 </script>
@@ -25,6 +25,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 0px;
 }
 </style>

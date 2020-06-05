@@ -1,28 +1,39 @@
 <template>
-  <div>
-      <div>
-        <h2>User Name</h2>
-        <input type="text" v-model="userName" />
+ <div class="login">
+    <h1>Login</h1>
+    
+    <div class="box">
+       <form id="login-form">
+      <!-- name -->
+      <div class="field">
+        <label class="label">User Name : </label>
+        <input type="text" class="input" name="userName">
       </div>
 
-      <div>
-        <h2>Email</h2>
-        <input type="text" v-model="email" />
-      </div>
-        <div>
-        <h2>Password</h2>
-        <input type="text" v-model="password" />
-      </div>
-        <div>
-        <h2>Confirm Password</h2>
-        <input type="text" v-model="confirmPassword" />
+      <!-- email -->
+      <div class="field">
+        <label class="label">Email : </label>
+        <input type="email" class="input" name="email">
       </div>
 
-      <div>
-        <h2>Submit</h2>
-        <input type="submit" value="Submit" v-on:click="submit" />
+      <div class="field">
+        <label class="label">Password : </label>
+        <input type="password" class="input" name="password">
       </div>
+
+      <div class="field">
+        <label class="label">Confirm Password : </label>
+        <input type="password" class="input" name="confirmPassword">
+      </div>
+
+      <!-- submit button -->
+      <div class="field has-text-right">
+        <button type="submit" class="button is-danger">Submit</button>
+      </div>
+    </form>
+    </div>
   </div>
+
 </template>
 
 <script>
