@@ -1,7 +1,7 @@
 <template>
   <div>
     <div><Header/></div>
-   <router-link to="/login">Login</router-link>
+   <button @click="logoutUser">Logout</button>
   </div>
 </template>
 
@@ -9,6 +9,12 @@
 import Header from './Header.vue'
 export default {
   name: 'About',
-  components:{Header}
+  components:{Header},
+  methods: {
+    logoutUser() {
+      localStorage.removeItem("loginUser");
+      this.$router.push('/login')
+    }
+  }
 };
 </script>

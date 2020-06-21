@@ -52,8 +52,7 @@
           <button type="submit">Submit</button>
           <br />
           <br />
-          <router-link to="/login">Login |</router-link>
-          <router-link to="/about">About</router-link>
+          <router-link to="/login">Login </router-link>
         </div>
       </form>
     </div>
